@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Century;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./images/avatar.png);
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 10px;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 17px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px, solid transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img {
+    float: left;
+    width: 100px;
+    height: auto;
+}
+
+.main {
+    max-width: 1200px;
+    height: auto;
+}
+
+#mazder {
+    border: 1pix;
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 250px;
+    left: 550px;
+}
+
+#picture {
+    border: 1pix;
+    width: 360px;
+    height: 270px;
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    left: 340px;
+}
+
+#bio {
+    border: 1px;
+    width: 600px;
+    height: 270px;
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    right: 100px;
+}
+
+#footer {
+    border: 1px;
+    height: 1px;
+    background-color: gold;
+    position: relative;
+    top: 650px;
+}
