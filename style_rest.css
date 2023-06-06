@@ -95,7 +95,20 @@ ul li.active a {
 #container {
     border: 1pix;
     width: 1060px;
-    height: 630px;
+    height: 585px;
+    background-color: skyblue;
+    position: absolute;
+    top: 145px;
+    right: 40px;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+#containerHead {
+    border: 1pix;
+    width: 1060px;
+    height: 40px;
     background-color: skyblue;
     position: absolute;
     top: 100px;
