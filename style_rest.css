@@ -58,7 +58,7 @@ ul li.active a {
     border: 1pix;
     width: 260px;
     height: 80px;
-    background-color: blue;
+    background-color: white;
     position: absolute;
     top: 380px;
     left: 40px;
@@ -78,7 +78,7 @@ ul li.active a {
     border: 1px;
     width: 260px;
     height: 270px;
-    background-color: skyblue;
+    background-color: white;
     position: absolute;
     top: 460px;
     left: 40px;
@@ -96,7 +96,7 @@ ul li.active a {
     border: 1pix;
     width: 1060px;
     height: 585px;
-    background-color: skyblue;
+    background-color: white;
     position: absolute;
     top: 145px;
     right: 40px;
@@ -109,7 +109,7 @@ ul li.active a {
     border: 1pix;
     width: 1060px;
     height: 40px;
-    background-color: skyblue;
+    background-color: white;
     position: absolute;
     top: 100px;
     right: 40px;
