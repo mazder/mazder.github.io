@@ -59,9 +59,9 @@ ul li.active a {
     width: 400px;
     height: 40px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 250px;
-    left: 550px;
+    left: 650px;
 }
 
 #picture {
@@ -69,9 +69,9 @@ ul li.active a {
     width: 360px;
     height: 270px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 300px;
-    left: 340px;
+    left: 480px;
 }
 
 #bio {
@@ -79,15 +79,16 @@ ul li.active a {
     width: 600px;
     height: 270px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 300px;
-    right: 100px;
+    left: 840px;
+    
 }
 
 #footer {
     border: 1px;
     height: 1px;
     background-color: gold;
-    position: relative;
-    top: 650px;
+    position: fixed;
+    bottom: 43px;
 }
