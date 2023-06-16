@@ -69,7 +69,7 @@ ul li.active a {
     width: 260px;
     height: 270px;
     background-color: w;
-    position: absolute;
+    position: fixed;
     top: 100px;
     left: 40px;
 }
@@ -97,9 +97,10 @@ ul li.active a {
     width: 1060px;
     height: 585px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 145px;
-    right: 40px;
+    
+    left: 350px;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     overflow-y: scroll;
