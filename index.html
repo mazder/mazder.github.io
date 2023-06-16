@@ -5,7 +5,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
     <style>
         table,
         th,
@@ -56,6 +56,7 @@
             </ul>
         </div>
     </header>
+    
     <div id="mazder">
         <h1> Md Mazder Rahman, Ph.D.</h1>
     </div>
@@ -65,12 +66,6 @@
     </div>
     <div id="bio">
         <table>
-            <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
             <tr>
                 <td>Research Assistant & Honorary Research Associate</td>
             </tr>
@@ -86,12 +81,15 @@
             <tr>
                 <td>Email: p3sp4@unb.ca</td>
             </tr>
-            <!--             <tr>
+            <tr>
                 <td>
                     <h3>Contribution</h3>
                     <p>I am working with Professor Andrew Gerber, Department of Mechanical Engineering at UNB in his Computational Fluid Dynamic (CFD) research project.</p>
                 </td>
-            </tr> -->
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
         </table>
     </div>
     <div id="footer">
@@ -102,6 +100,35 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="processing">
+        <script type="text/javascript">
+            const ranges = 100;
+    
+            function setup() {
+                createCanvas(windowWidth, windowHeight/5);
+                background(0);
+            }
+    
+            function draw() {
+                background(0);
+                noFill();
+                strokeWeight(1);
+                for (let i = 1; i < ranges; i++) {
+                    let paint = map(i, 0, ranges, 1, 105);
+                    stroke(paint);
+    
+                    beginShape();
+                    for (let x = -100; x < width + 11; x += 20) {
+                        const n = noise(x * 0.001, i * 0.01, frameCount * 0.01);
+                        const y = map(n, 0.1, 1, mouseY, height);
+                        vertex(x, y);
+                    }
+                    endShape();
+                }
+            }
+        </script>
     </div>
 </body>
 
