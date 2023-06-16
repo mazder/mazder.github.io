@@ -75,8 +75,8 @@ ul li.active a {
 }
 
 #bio {
-    border: 1px;
-    width: 600px;
+    border: 0px;
+    width: 360px;
     height: 270px;
     background-color: white;
     position: fixed;
