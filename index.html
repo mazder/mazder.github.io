@@ -51,12 +51,15 @@
                     <a href="https://mazder.github.io/skills.html">Skills</a>
                 </li>
                 <li>
+                    <a href="https://mazder.github.io/rnd.html">R&D Experience</a>
+                </li>
+                <li>
                     <a href="https://mazder.github.io/more.html">More</a>
                 </li>
             </ul>
         </div>
     </header>
-    
+
     <div id="mazder">
         <h1> Md Mazder Rahman, Ph.D.</h1>
     </div>
@@ -105,10 +108,10 @@
             const ranges = 100;
 
             function setup() {
-                createCanvas(windowWidth, windowHeight/2);
+                createCanvas(windowWidth, windowHeight / 2);
                 background(0);
             }
-    
+
             function draw() {
                 background(0);
                 noFill();
@@ -116,7 +119,7 @@
                 for (let i = 1; i < ranges; i++) {
                     let paint = map(i, 0, ranges, 1, 105);
                     stroke(paint);
-    
+
                     beginShape();
                     for (let x = -100; x < width + 11; x += 20) {
                         const n = noise(x * 0.001, i * 0.01, frameCount * 0.01);
