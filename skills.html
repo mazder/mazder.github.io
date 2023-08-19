@@ -140,11 +140,13 @@
             <a><b>CI & Runtime Analysis:</b> <a href="https://github.com/mazder/pennylane-lightning-benchmarks">
                 [pennylane-lightning-benchmarks]</a> 
             
-                An example project of software 
-                <li style="margin-left: 15px; list-style-type:square; padding:5px">packaging (using HPC Spack tools)</li>
-                <li style="margin-left: 15px; list-style-type:square; padding:5px">packaging (using HPC Spack tools)</li>
-                <li style="margin-left: 15px; list-style-type:square; padding:5px">packaging (using HPC Spack tools)</li>    
-                <li style="margin-left: 15px; list-style-type:square; padding:5px">packaging (using HPC Spack tools)</li>
+                A complete work flow for software packaging using HPC Spack tools, building (with two different compilers GCC and LLVM) in both bare-metal hardware and docker containers, deploying\&running in both bare-metal hardware and containers, and analyzing performance of 
+                
+               of runtimes for pennylane-lightning executable 'bench kernels'. Four execuatables are built using both GCC 11.3.0 and Clang 15.0.6 compilers through Spack-specific commands in both bare-metal hardware and docker container. The runtime statistics
+are obtained from running execuatables in both bare-metal and container environments. Experiments show that in both environments bare-metal
+hardware and docker container, the runtime of the executable built with Clang is lower than the runtime of that executable built with GCC. There-
+fore, clang will be the best compiler for Pennylane-Lightning in comparing with GCC.
+                
             </a>
         </li>
 
