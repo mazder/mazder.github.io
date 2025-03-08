@@ -3,9 +3,9 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_rest.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+
     <style>
         table,
         th,
@@ -19,11 +19,19 @@
             padding: 8px;
         }
         
+        table td:nth-child(2) {
+            text-align: end;
+        }
+        
         pre {
             display: block;
             font-family: monospace;
             white-space: pre;
             margin: 1em 0;
+        }
+        
+        img {
+            border-radius: 70%;
         }
     </style>
 </head>
@@ -35,7 +43,7 @@
                 <li class="active">
                     <a href="https://mazder.github.io/index.html">Home</a>
                 </li>
-                <li>
+                <li >
                     <a href="https://mazder.github.io/home.html">About Me</a>
                 </li>
                 <li>
@@ -59,41 +67,59 @@
             </ul>
         </div>
     </header>
-
     <div id="mazder">
-        <h1> Md Mazder Rahman, Ph.D.</h1>
+        <h2> Md Mazder Rahman,</h2>
+        <h2> Ph.D.</h2>
     </div>
 
+
     <div id="picture">
-        <img src="images/mazder.jpg" style="width: 360px">
+        <img src="images/me.png" style="width: 260px" alt="Avatar">
     </div>
     <div id="bio">
         <table>
             <tr>
-                <td>Research Assistant & Honorary Research Associate</td>
-            </tr>
-            <tr>
-                <td>Department of Mechanical Engineering</td>
-            </tr>
-            <tr>
-                <td>University of New Brunswick</td>
-            </tr>
-            <tr>
-                <td>Fredericton, New Brunswick, Canada</td>
-            </tr>
-            <tr>
-                <td>Email: p3sp4@unb.ca</td>
+                <td>
+                    <i class="fa fa-linkedin-square" style="font-size:16px"><a href="https://www.linkedin.com/in/mazderphd/"> Linkedin</a></i>
+                </td>
             </tr>
             <tr>
                 <td>
-                    <h3>Contributing</h3>
-                    <p>- R&D in Ocean Mapping research project in <a href="https://ace-net.ca/">Ace-Net</a> Supercomputing environment.</p>
-                    <p>- Systhesis and optimization of quantum circuits</p>
+                    <i class="fa fa-github" style="font-size:16px"><a href="https://github.com/mazder"> GitHub</a></i>
                 </td>
             </tr>
-
+            <tr>
+                <td>
+                    <i class="fa fa-google" style="font-size:16px"><a href="https://scholar.google.ca/citations?hl=en&user=vAMt0LMAAAAJ&view_op=list_works&gmla=AHoSzlVA58y80sbLLAtgO6g53dcWy_q4ImkXVAtlxV9xvBQaniSd9SrXdMfe43OqjbeKiw7XeqNiwa-Akxr8lLe4"> Google Scholar</a></i>
+                </td>
+            </tr>
         </table>
     </div>
+    <div id="containerHead">
+    <br><br>
+    <br><br>
+        <h2>Optimizing Simulations on High-Performance Computing (HPC) Clusters</h2>
+	<br><br>
+        <p>
+           To achieve faster and more efficient simulations on HPC clusters, it's essential to fully harness the capabilities of key technologies like <strong>Slurm</strong>, <strong>MPI</strong>, <strong>OpenMP</strong>, and <strong>CUDA</strong>. These tools play a critical role in large-scale scientific computations, data processing, and complex simulations by optimizing resource management and accelerating performance.
+        </p>
+	<br><br>
+        <p>
+            With over 10 years of experience in HPC software development and simulation engineering, I specialize in helping fully utilize HPC resources. Here's how I can contribute:
+        </p>
+
+        <ul>
+            <li><strong>Optimize Resource Allocation with Slurm:</strong> Maximize HPC resources by efficiently managing job scheduling, node allocation, and GPU utilization.<br></li>
+            <br>
+            <li><strong>Accelerate Parallel Processing with MPI:</strong> Distribute simulations across multiple nodes, ensuring seamless communication and synchronization across the cluster.</li>
+            <br>
+            <li><strong>Harness the Power of Multi-Core CPUs with OpenMP:</strong> Improve performance within nodes by parallelizing tasks across multiple CPU cores.</li>
+            <br>
+            <li><strong>Leverage GPU Acceleration with CUDA:</strong> Enhance computational speed by offloading intensive tasks to GPUs, unlocking massive parallelism with CUDA.</li>
+        </ul>
+    <div class="content-container">
+    
+     
     <div id="footer">
         <div class="row">
             <div class="col-lg-12">
@@ -103,7 +129,6 @@
             </div>
         </div>
     </div>
-
     <div id="processing">
         <script type="text/javascript">
             const ranges = 100;
@@ -132,6 +157,7 @@
             }
         </script>
     </div>
+    
 </body>
 
 </html>
