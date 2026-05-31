@@ -1,0 +1,90 @@
+.activity-page {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  padding: 24px 32px;
+  box-sizing: border-box;
+
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #1f2937;
+  line-height: 1.65;
+}
+
+/* Title */
+.activity-page h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* Section headings */
+.activity-page h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+}
+
+/* Cards */
+.activity-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  padding: 20px 24px;
+  margin-bottom: 16px;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Text */
+.activity-card p,
+.activity-card li {
+  font-size: 14px;
+  color: #374151;
+  margin: 6px 0;
+}
+
+/* Lists */
+.activity-card ul {
+  margin: 8px 0 0 18px;
+}
+
+/* Intro text */
+.activity-page > p {
+  font-size: 15px;
+  color: #4b5563;
+  margin-bottom: 20px;
+  max-width: 1100px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .activity-page {
+    padding: 16px;
+  }
+
+  .activity-page h2 {
+    font-size: 24px;
+  }
+
+  .activity-page h3 {
+    font-size: 18px;
+  }
+
+  .activity-card {
+    padding: 16px;
+  }
+}

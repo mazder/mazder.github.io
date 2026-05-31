@@ -1,0 +1,145 @@
+/* ==========================
+   RESEARCH PAGE
+========================== */
+
+.research-page {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.research-page h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #2563eb;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.research-page h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #1e293b;
+  font-size: 1.4rem;
+}
+
+.research-page p {
+  text-align: justify;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 15px;
+}
+
+/* ==========================
+   RESEARCH AREAS
+========================== */
+
+.research-areas {
+  margin-top: 10px;
+}
+
+.research-areas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.research-areas li {
+  padding: 12px 16px;
+  margin-bottom: 12px;
+
+  border-left: 4px solid #2563eb;
+  background: #f8fafc;
+
+  border-radius: 6px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.research-areas strong {
+  color: #0f172a;
+}
+
+/* ==========================
+   EXPERIENCE TIMELINE
+========================== */
+
+.research-timeline {
+  margin-top: 20px;
+}
+
+.research-card {
+  background: white;
+
+  border-left: 5px solid #2563eb;
+
+  padding: 18px 20px;
+
+  margin-bottom: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.research-card h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #0f172a;
+}
+
+.research-meta {
+  margin-top: 5px;
+  margin-bottom: 12px;
+
+  color: #64748b;
+  font-size: 0.95rem;
+
+  font-style: italic;
+}
+
+.research-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.research-card li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* ==========================
+   HOVER EFFECT
+========================== */
+
+.research-card:hover {
+  transform: translateY(-2px);
+
+  transition: 0.25s ease;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+
+  .research-page h2 {
+    font-size: 1.7rem;
+  }
+
+  .research-page h3 {
+    font-size: 1.2rem;
+  }
+
+  .research-card {
+    padding: 15px;
+  }
+
+  .research-card h4 {
+    font-size: 1rem;
+  }
+}

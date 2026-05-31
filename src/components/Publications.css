@@ -1,0 +1,46 @@
+.publication-page {
+  width: 100%;
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.publication-page h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #2563eb;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.publication-page h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.publication-card {
+  background: #ffffff;
+  border-left: 4px solid #2563eb;
+  padding: 15px 18px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.publication-card h4 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.pub-meta {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 5px 0 8px;
+}
+
+.publication-card p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.6;
+}

@@ -1,0 +1,134 @@
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 🔥 important fix (was center) */
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  padding-top: 70px;
+
+  min-height: calc(100vh - 130px);
+
+  box-sizing: border-box;
+  gap: 50px; /* 🔥 important: controls column separation */
+}
+
+/* LEFT COLUMN */
+.left-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  transform: translateY(-10px);
+}
+
+/* PROFILE IMAGE */
+.profile-img img {
+  width: 280px;
+  height: 280px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 5px solid #0f172a;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+.profile-img img:hover {
+  transform: scale(1.03);
+}
+
+/* NAME */
+#mazder h2 {
+  margin: 0;
+  text-align: center;
+  color: #0f172a;
+
+  font-size: 26px;
+  white-space: nowrap;
+}
+
+/* LINKS */
+#bio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+#bio a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 500;
+  transition: 0.2s;
+  text-align: left;   /* 👈 key fix */
+  align-items: flex-start; /* 👈 ensures left alignment in flex */
+}
+
+#bio a:hover {
+  color: #2563eb;
+}
+
+/* RIGHT COLUMN */
+.right-col {
+  flex: 1.6;              /* 🔥 MAIN FIX: makes it wider */
+  max-width: 800px;       /* increased slightly */
+}
+
+/* TEXT */
+.intro-text h1 {
+  margin-bottom: 10px;
+  color: #0f172a;
+  font-size: 32px;
+}
+
+.intro-text {
+  text-align: justify;
+  
+}
+.intro-text ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.intro-text li {
+  margin-bottom: 16px;
+  padding-left: 6px;
+  padding-bottom: 4px;
+}
+
+.intro-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 14px;
+  text-align: justify;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    align-items: center; /* 🔥 better mobile alignment */
+  }
+
+  .profile-img img {
+    width: 240px;
+    height: 240px;
+  }
+
+  #mazder h2 {
+    font-size: 22px;
+    white-space: normal;
+  }
+
+  .right-col {
+    max-width: 100%;
+  }
+}

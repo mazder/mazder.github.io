@@ -1,0 +1,105 @@
+.experience-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  padding: 32px 40px;
+  box-sizing: border-box;
+
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #1f2937;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+/* Title */
+.experience-page h2 {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #0f172a;
+}
+
+/* Section headings */
+.experience-page h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 34px;
+  margin-bottom: 16px;
+
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+
+  color: #111827;
+}
+
+/* Cards */
+.experience-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #f59e0b; /* orange R&D accent */
+
+  border-radius: 14px;
+
+  padding: 22px 26px;
+  margin-bottom: 18px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Role title */
+.experience-card h4 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+/* Meta */
+.exp-meta {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.experience-card p {
+  font-size: 15px;
+  color: #334155;
+}
+
+/* Lists */
+.experience-card ul {
+  margin: 10px 0 0 22px;
+}
+
+.experience-card li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #334155;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-page {
+    padding: 18px;
+  }
+
+  .experience-page h2 {
+    font-size: 26px;
+  }
+
+  .experience-page h3 {
+    font-size: 18px;
+  }
+
+  .experience-card {
+    padding: 16px;
+  }
+}

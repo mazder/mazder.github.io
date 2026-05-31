@@ -1,0 +1,138 @@
+.teaching-page {
+  width: 100%;
+  max-width: 1400px;   /* wider academic layout */
+  margin: 0 auto;
+
+  padding: 32px 40px;  /* more breathing space */
+  box-sizing: border-box;
+
+  text-align: justify;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #1f2937;
+  line-height: 1.75;
+}
+
+/* =========================
+   TITLE
+========================= */
+.teaching-page h2 {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+.teaching-page h3 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 34px;
+  margin-bottom: 18px;
+
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+
+  color: #111827;
+}
+
+/* =========================
+   TEACHING CARD
+========================= */
+.teaching-card {
+  width: 100%;
+  display: block;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 5px solid #3b82f6; /* academic highlight bar */
+
+  border-radius: 14px;
+
+  padding: 24px 28px;
+  margin-bottom: 20px;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.teaching-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   ROLE TITLE
+========================= */
+.teaching-card h4 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+/* =========================
+   META INFO
+========================= */
+.pub-meta {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   TEXT CONTENT
+========================= */
+.teaching-card p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #334155;
+}
+
+/* =========================
+   LISTS
+========================= */
+.teaching-card ul {
+  margin: 10px 0 0 22px;
+  padding: 0;
+}
+
+.teaching-card li {
+  margin-bottom: 7px;
+  font-size: 15px;
+  color: #334155;
+}
+
+/* =========================
+   INTRO TEXT
+========================= */
+.teaching-page > p {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 24px;
+  max-width: 1200px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .teaching-page {
+    padding: 18px;
+  }
+
+  .teaching-page h2 {
+    font-size: 26px;
+  }
+
+  .teaching-page h3 {
+    font-size: 19px;
+  }
+
+  .teaching-card {
+    padding: 16px;
+    border-left-width: 4px;
+  }
+}
